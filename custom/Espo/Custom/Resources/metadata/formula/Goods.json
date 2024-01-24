@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "if (quantity > 1) {\n    name = string\\concatenate(productItem.name, \" (\", quantity, \")\");\n} else {\n    name = productItem.name;\n}\n\ntotalPrice = productItem.price * quantity;"
+}

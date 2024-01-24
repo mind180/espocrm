@@ -2,8 +2,10 @@
     "fields": {
         "name": {
             "type": "varchar",
-            "required": true,
-            "pattern": "$noBadCharacters"
+            "required": false,
+            "pattern": "$noBadCharacters",
+            "readOnly": true,
+            "options": []
         },
         "description": {
             "type": "text"
@@ -28,40 +30,29 @@
         },
         "assignedUser": {
             "type": "link",
-            "required": false,
+            "required": true,
             "view": "views/fields/assigned-user"
         },
         "teams": {
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "isActive": {
-            "notNull": true,
-            "type": "bool",
-            "default": true,
+        "productItem": {
+            "type": "link",
+            "required": true
+        },
+        "quantity": {
+            "type": "int",
+            "required": true,
+            "default": 1,
+            "min": 1,
+            "isCustom": true
+        },
+        "totalPrice": {
+            "type": "currency",
+            "required": false,
+            "readOnly": true,
             "tooltip": true,
-            "isCustom": true
-        },
-        "abonplans": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "layoutListDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "exportDisabled": true,
-            "customizationDisabled": true,
-            "isCustom": true
-        },
-        "productItems": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "layoutListDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "exportDisabled": true,
-            "customizationDisabled": true,
             "isCustom": true
         }
     },
@@ -84,16 +75,9 @@
             "relationName": "entityTeam",
             "layoutRelationshipsDisabled": true
         },
-        "abonplans": {
-            "type": "hasMany",
-            "foreign": "pricebook",
-            "entity": "Abonplan",
-            "audited": false,
-            "isCustom": true
-        },
-        "productItems": {
-            "type": "hasMany",
-            "foreign": "pricebook",
+        "productItem": {
+            "type": "belongsTo",
+            "foreign": "goodses",
             "entity": "ProductItem",
             "audited": false,
             "isCustom": true
@@ -101,7 +85,12 @@
     },
     "collection": {
         "orderBy": "createdAt",
-        "order": "desc"
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
     },
     "indexes": {
         "name": {
@@ -128,5 +117,6 @@
                 "id"
             ]
         }
-    }
+    },
+    "optimisticConcurrencyControl": false
 }

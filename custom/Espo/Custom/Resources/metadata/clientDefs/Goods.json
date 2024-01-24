@@ -3,13 +3,12 @@
     "boolFilterList": [
         "onlyMy"
     ],
-    "iconClass": "fas fa-dollar-sign",
+    "color": "#38619e",
+    "iconClass": "fas fa-tshirt",
     "relationshipPanels": {
-        "abonplans": {
-            "layout": null
-        },
-        "productItems": {
+        "productItem": {
             "layout": null
         }
-    }
+    },
+    "kanbanViewMode": false
 }

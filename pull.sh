@@ -18,5 +18,8 @@ cp -r $BUILD"/client/custom" $PROJECT"/client/";
 cp -r $BUILD"/custom/Espo/Custom" $PROJECT"/custom/Espo/";
 cp $BUILD"/data/config.php" $PROJECT"/data";
 
+#chown "hw:hw" $PROJECT"/client/";
+#chown "hw:hw" $PROJECT"/custom/Espo/";
+
 
 echo "Done!";

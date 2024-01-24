@@ -1,0 +1,59 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "productItem"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "quantity"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                false,
+                {
+                    "name": "totalPrice"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": {
+            "conditionGroup": [
+                {
+                    "type": "isNotEmpty",
+                    "attribute": "totalPrice"
+                }
+            ]
+        },
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Розрахунок"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "tabBreak": null,
+        "tabLabel": null,
+        "hidden": null,
+        "label": ""
+    }
+]

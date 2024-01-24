@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "Create Goods": "Створити Товар"
+    },
+    "fields": {
+        "productItem": "Продукт",
+        "quantity": "Кількість",
+        "totalPrice": "Загальна сума",
+        "totalPriceCurrency": "Загальна сума (Валюта)",
+        "totalPriceConverted": "Загальна сума (Конвертована)"
+    },
+    "links": {
+        "productItem": "Продукт"
+    },
+    "tooltips": {
+        "totalPrice": "Кількість * Ціна"
+    }
+}

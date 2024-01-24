@@ -35,25 +35,15 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "isActive": {
-            "notNull": true,
-            "type": "bool",
-            "default": true,
-            "tooltip": true,
+        "pricebook": {
+            "type": "link"
+        },
+        "price": {
+            "type": "currency",
+            "required": true,
             "isCustom": true
         },
-        "abonplans": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "layoutListDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "exportDisabled": true,
-            "customizationDisabled": true,
-            "isCustom": true
-        },
-        "productItems": {
+        "goodses": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
             "layoutMassUpdateDisabled": true,
@@ -84,24 +74,29 @@
             "relationName": "entityTeam",
             "layoutRelationshipsDisabled": true
         },
-        "abonplans": {
-            "type": "hasMany",
-            "foreign": "pricebook",
-            "entity": "Abonplan",
+        "pricebook": {
+            "type": "belongsTo",
+            "foreign": "productItems",
+            "entity": "Pricebook",
             "audited": false,
             "isCustom": true
         },
-        "productItems": {
+        "goodses": {
             "type": "hasMany",
-            "foreign": "pricebook",
-            "entity": "ProductItem",
+            "foreign": "productItem",
+            "entity": "Goods",
             "audited": false,
             "isCustom": true
         }
     },
     "collection": {
         "orderBy": "createdAt",
-        "order": "desc"
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
     },
     "indexes": {
         "name": {
@@ -128,5 +123,6 @@
                 "id"
             ]
         }
-    }
+    },
+    "optimisticConcurrencyControl": false
 }

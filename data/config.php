@@ -42,10 +42,10 @@ return [
     1 => 'Abonement'
   ],
   'tabList' => [
-    0 => 'Calendar',
-    1 => 'AttendanceSheet',
-    2 => 'Contact',
-    3 => 'Abonement',
+    0 => 'AttendanceSheet',
+    1 => 'Contact',
+    2 => 'Abonement',
+    3 => 'Goods',
     4 => 'RentPlan',
     5 => (object) [
       'type' => 'group',
@@ -54,10 +54,11 @@ return [
       'color' => NULL,
       'id' => '822152',
       'itemList' => [
-        0 => 'Training',
-        1 => 'Indiv',
-        2 => 'Rent',
-        3 => 'Event'
+        0 => 'Calendar',
+        1 => 'Training',
+        2 => 'Indiv',
+        3 => 'Rent',
+        4 => 'Event'
       ]
     ],
     6 => (object) [
@@ -105,10 +106,11 @@ return [
       'color' => NULL,
       'id' => '89473',
       'itemList' => [
-        0 => 'Abonplan',
-        1 => 'Abonservice',
-        2 => 'Pricebook',
-        3 => 'Discount'
+        0 => 'ProductItem',
+        1 => 'Abonplan',
+        2 => 'Abonservice',
+        3 => 'Pricebook',
+        4 => 'Discount'
       ]
     ],
     11 => (object) [
@@ -145,8 +147,8 @@ return [
         2 => 'Branch'
       ]
     ],
-    14 => 'Stream',
-    15 => '_delimiter_',
+    14 => '_delimiter_',
+    15 => 'Stream',
     16 => (object) [
       'type' => 'group',
       'text' => 'Налаштування',
@@ -210,7 +212,7 @@ return [
   'maxEmailAccountCount' => 2,
   'followCreatedEntities' => true,
   'b2cMode' => false,
-  'theme' => 'Violet',
+  'theme' => 'Dark',
   'themeParams' => (object) [
     'navbar' => 'side'
   ],
@@ -354,8 +356,8 @@ return [
     1 => 'email',
     2 => 'phone'
   ],
-  'cacheTimestamp' => 1705620652,
-  'microtime' => 1705620652.042475,
+  'cacheTimestamp' => 1705971097,
+  'microtime' => 1705971097.640602,
   'siteUrl' => 'https://dsfreedom.art',
   'fullTextSearchMinLength' => 4,
   'appTimestamp' => 1695834342,
