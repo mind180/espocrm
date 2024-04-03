@@ -1,0 +1,30 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "event"
+                }
+            ],
+            [
+                {
+                    "name": "nameOnMap"
+                },
+                {
+                    "name": "title"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "price"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

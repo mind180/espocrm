@@ -1,21 +1,20 @@
 [
     {
-        "label": "Overview",
         "rows": [
             [
                 {
                     "name": "name"
                 },
                 {
-                    "name": "parent"
+                    "name": "eventType"
                 }
-            ],
-            [
-                {
-                    "name": "status"
-                },
-                false
-            ],
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
             [
                 {
                     "name": "dateStart"
@@ -29,15 +28,131 @@
                     "name": "duration"
                 },
                 {
-                    "name": "reminders"
+                    "name": "status"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Дата та час"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "place"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Адреса та місце"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "posterLink"
                 }
             ],
             [
                 {
-                    "name": "description",
-                    "fullWidth": true
+                    "name": "description"
                 }
             ]
-        ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Додатково"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bookingTime"
+                },
+                {
+                    "name": "ticketTypes"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "equals",
+                    "attribute": "eventTypeId",
+                    "data": {
+                        "field": "eventType",
+                        "values": {
+                            "eventTypeName": "Звітній концерт"
+                        }
+                    },
+                    "value": "65e984224c6684f2f"
+                }
+            ]
+        },
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Квитки та зал",
+        "hidden": false,
+        "customLabel": "Параметри квитків"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "numberOfFloors"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "map"
+                }
+            ],
+            [
+                {
+                    "name": "map2"
+                }
+            ],
+            [
+                {
+                    "name": "map3"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "equals",
+                    "attribute": "eventTypeId",
+                    "data": {
+                        "field": "eventType",
+                        "values": {
+                            "eventTypeName": "Концерт"
+                        }
+                    },
+                    "value": "65e984224c6684f2f"
+                }
+            ]
+        },
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Параметри залу"
     }
 ]

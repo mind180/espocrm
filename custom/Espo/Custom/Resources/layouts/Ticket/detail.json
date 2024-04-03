@@ -1,0 +1,139 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "event"
+                },
+                {
+                    "name": "contact"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bookedStart"
+                },
+                {
+                    "name": "bookedEnd"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "or",
+                    "value": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "booked"
+                        },
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "notPaid"
+                        }
+                    ]
+                }
+            ]
+        },
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Бронювання"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "row"
+                },
+                {
+                    "name": "seat"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "ticketType"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Квиток"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "salesDate"
+                },
+                {
+                    "name": "price"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "isPaid"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": {
+            "conditionGroup": [
+                {
+                    "type": "equals",
+                    "attribute": "status",
+                    "value": "paid"
+                }
+            ]
+        },
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Розрахунок"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": {
+            "conditionGroup": [
+                {
+                    "type": "isNotEmpty",
+                    "attribute": "description"
+                }
+            ]
+        },
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Додатково"
+    }
+]

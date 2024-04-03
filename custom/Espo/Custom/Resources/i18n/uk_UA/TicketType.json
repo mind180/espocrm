@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "Create TicketType": "Створити Тип квитка"
+    },
+    "fields": {
+        "price": "Ціна",
+        "priceCurrency": "Ціна (Валюта)",
+        "priceConverted": "Ціна (Конвертована)",
+        "event": "Івент",
+        "nameOnMap": "Позначка",
+        "title": "Назва",
+        "color": "Колір",
+        "tickets": "Квитки"
+    },
+    "links": {
+        "event": "Івент",
+        "tickets": "Квитки"
+    },
+    "tooltips": {
+        "nameOnMap": "Позначка на мапі\nОдна англійська, велика або маленька, літера",
+        "color": "Колір місця на макеті"
+    }
+}

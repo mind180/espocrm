@@ -1,0 +1,41 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "event"
+                }
+            ],
+            [
+                {
+                    "name": "title"
+                },
+                {
+                    "name": "price"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "nameOnMap"
+                },
+                {
+                    "name": "color"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Мапа"
+    }
+]
