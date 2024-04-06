@@ -61,9 +61,24 @@
         "rows": [
             [
                 {
+                    "name": "showOnSite"
+                },
+                false
+            ],
+            [
+                {
                     "name": "posterLink"
                 }
-            ],
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Freedom Івенти (сайт)"
+    },
+    {
+        "rows": [
             [
                 {
                     "name": "description"

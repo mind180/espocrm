@@ -195,6 +195,12 @@
                 "34 канал"
             ],
             "isCustom": true
+        },
+        "showOnSite": {
+            "notNull": true,
+            "type": "bool",
+            "tooltip": true,
+            "isCustom": true
         }
     },
     "links": {

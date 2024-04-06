@@ -16,6 +16,10 @@
         "align": "left"
     },
     {
+        "name": "ticketType",
+        "align": "right"
+    },
+    {
         "name": "phone",
         "align": "right"
     },

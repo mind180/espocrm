@@ -11,14 +11,8 @@
             ],
             [
                 {
-                    "name": "nameOnMap"
-                },
-                {
                     "name": "title"
-                }
-            ],
-            [
-                false,
+                },
                 {
                     "name": "price"
                 }
@@ -26,5 +20,22 @@
         ],
         "style": "default",
         "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "nameOnMap"
+                },
+                {
+                    "name": "color"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Мапа"
     }
 ]
