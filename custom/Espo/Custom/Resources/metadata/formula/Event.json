@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "//formate link\nif (posterLink && string\\contains(posterLink, '/d/')) {\n    $linkBeforeId = 'https://drive.google.com/thumbnail?id=';\n    $linkAfterId = '&sz=w600';\n    \n    $linkParts = string\\split(posterLink, '/');\n    $fileId = array\\at($linkParts, 5);\n    \n    posterLink = string\\concatenate($linkBeforeId, $fileId, $linkAfterId);\n}"
+}
