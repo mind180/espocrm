@@ -146,6 +146,11 @@
                 {
                     "name": "map3"
                 }
+            ],
+            [
+                {
+                    "name": "indexer"
+                }
             ]
         ],
         "dynamicLogicVisible": {

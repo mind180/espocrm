@@ -5,18 +5,13 @@
         "label": "Ім'я"
     },
     {
+        "name": "place"
+    },
+    {
         "name": "status",
         "label": "Статус"
     },
     {
-        "name": "row",
-        "label": "Ряд"
-    },
-    {
-        "name": "seat",
-        "label": "Місце"
-    },
-    {
-        "name": "ticketType"
+        "name": "phone"
     }
 ]

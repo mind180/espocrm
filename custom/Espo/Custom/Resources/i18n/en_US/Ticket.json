@@ -14,7 +14,9 @@
         "seat": "Місце",
         "row": "Ряд",
         "phone": "Телефон",
-        "email": "Email"
+        "email": "Email",
+        "paymentMethod": "Спосіб розрахунку",
+        "place": "Місце"
     },
     "links": {
         "event": "Івент",
@@ -34,6 +36,10 @@
             "booked": "Заброньовано",
             "notPaid": "Не сплачено",
             "paid": "Сплачено"
+        },
+        "paymentMethod": {
+            "cash": "Готівка",
+            "iban": "IBAN"
         }
     }
 }

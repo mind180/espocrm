@@ -8,16 +8,7 @@
         "align": "left"
     },
     {
-        "name": "row",
-        "align": "left"
-    },
-    {
-        "name": "seat",
-        "align": "left"
-    },
-    {
-        "name": "ticketType",
-        "align": "right"
+        "name": "place"
     },
     {
         "name": "phone",

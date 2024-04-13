@@ -201,6 +201,15 @@
             "type": "bool",
             "tooltip": true,
             "isCustom": true
+        },
+        "indexer": {
+            "type": "array",
+            "storeArrayValues": true,
+            "noEmptyString": true,
+            "default": [],
+            "displayAsList": true,
+            "tooltip": true,
+            "isCustom": true
         }
     },
     "links": {

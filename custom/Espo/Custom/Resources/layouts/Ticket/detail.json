@@ -61,14 +61,8 @@
         "rows": [
             [
                 {
-                    "name": "row"
+                    "name": "place"
                 },
-                {
-                    "name": "seat"
-                }
-            ],
-            [
-                false,
                 {
                     "name": "ticketType"
                 }
@@ -86,6 +80,25 @@
         "rows": [
             [
                 {
+                    "name": "row"
+                },
+                {
+                    "name": "seat"
+                },
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Індекс"
+    },
+    {
+        "rows": [
+            [
+                {
                     "name": "salesDate"
                 },
                 {
@@ -93,7 +106,9 @@
                 }
             ],
             [
-                false,
+                {
+                    "name": "paymentMethod"
+                },
                 {
                     "name": "isPaid"
                 }
