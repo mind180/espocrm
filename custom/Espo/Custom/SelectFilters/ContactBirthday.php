@@ -12,7 +12,7 @@ class ContactBirthday implements Filter
     public function apply(SelectBuilder $selectBuilder): void
     {
         $today = new DateTime("now", new DateTimeZone('Europe/Kiev'));
-        $todayOfAnyYear = '%-' . $today->format('m') . '-%';
+        $todayOfAnyYear = '%-' . $today->format('m-d');
 
         $selectBuilder
             ->where([
