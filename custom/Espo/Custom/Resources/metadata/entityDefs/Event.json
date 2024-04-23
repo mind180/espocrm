@@ -210,6 +210,20 @@
             "displayAsList": true,
             "tooltip": true,
             "isCustom": true
+        },
+        "phone": {
+            "type": "varchar",
+            "maxLength": 30,
+            "options": [],
+            "tooltip": true,
+            "isCustom": true
+        },
+        "iban": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
         }
     },
     "links": {

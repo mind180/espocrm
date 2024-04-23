@@ -107,10 +107,25 @@
 
 /* end budget */
 
+/* tickets */ 
+
+.tickets-income-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.tickets-income-result {
+    display: flex;
+    justify-content: center;
+    color: var(--brand-success-10);
+}
+
+/* end tickets */
+
 /* attendance statistics */
-
-
-/* end attendance statistics */
 
 .trainer:hover {
     background-color: var(--btn-default-hover-bg);
@@ -119,6 +134,8 @@
 .trainer-selected {
     background-color: var(--btn-default-hover-bg) !important;
 }
+
+/* end attendance statistics */
 
 /* loader animation */
 

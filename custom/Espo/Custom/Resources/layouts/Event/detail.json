@@ -61,6 +61,26 @@
         "rows": [
             [
                 {
+                    "name": "phone"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "iban"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Зворотній зв'язок"
+    },
+    {
+        "rows": [
+            [
+                {
                     "name": "showOnSite"
                 },
                 false
@@ -76,20 +96,6 @@
         "tabBreak": false,
         "hidden": false,
         "customLabel": "Freedom Івенти (сайт)"
-    },
-    {
-        "rows": [
-            [
-                {
-                    "name": "description"
-                }
-            ]
-        ],
-        "dynamicLogicVisible": null,
-        "style": "default",
-        "tabBreak": false,
-        "hidden": false,
-        "customLabel": "Додатково"
     },
     {
         "rows": [
@@ -123,6 +129,20 @@
         "tabLabel": "Квитки та зал",
         "hidden": false,
         "customLabel": "Параметри квитків"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Додатково"
     },
     {
         "rows": [

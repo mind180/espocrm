@@ -1,0 +1,27 @@
+{
+    "view": "custom:views/dashlets/tickets-income",
+    "aclScope": "Ticket",
+    "options": {
+        "fields": {
+            "title": {
+                "type": "varchar"
+            },
+            "eventId": {
+                "type": "varchar"
+            }
+        },
+        "defaults": {
+            "title": "Квитки"
+        },
+        "layout": [
+            {
+                "rows": [
+                    [
+                        {"name": "title"},
+                        {"name": "eventId"}
+                    ]
+                ]
+            }
+        ]
+    }
+}
