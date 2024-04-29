@@ -16,7 +16,9 @@
         "phone": "Телефон",
         "email": "Email",
         "paymentMethod": "Спосіб розрахунку",
-        "place": "Місце"
+        "place": "Місце",
+        "sendEmailTrigger": "SendEmailTrigger",
+        "emailWasSend": "Надіслано на пошту"
     },
     "links": {
         "event": "Івент",
@@ -29,7 +31,9 @@
     "tooltips": {
         "salesDate": "Дата сплати за квиток",
         "bookedStart": "Дата та час початку бронювання",
-        "bookedEnd": "Дата та час закінчення бронювання"
+        "bookedEnd": "Дата та час закінчення бронювання",
+        "sendEmailTrigger": "Formula script use this field. When value change, script detect this as trigger to send email.",
+        "emailWasSend": "Квиток був надісланий на пошту"
     },
     "options": {
         "status": {

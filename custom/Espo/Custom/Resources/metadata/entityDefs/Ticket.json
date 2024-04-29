@@ -139,6 +139,18 @@
             "maxLength": 150,
             "options": [],
             "isCustom": true
+        },
+        "sendEmailTrigger": {
+            "notNull": true,
+            "type": "bool",
+            "tooltip": true,
+            "isCustom": true
+        },
+        "emailWasSend": {
+            "notNull": true,
+            "type": "bool",
+            "tooltip": true,
+            "isCustom": true
         }
     },
     "links": {

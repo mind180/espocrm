@@ -17,6 +17,25 @@
             "layout": null
         }
     },
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Надіслати на пошту",
+                    "name": "sendEmail",
+                    "action": "sendEmail",
+                    "style": "default",
+                    "acl": "edit",
+                    "aclScope": "Ticket",
+                    "data": {
+                        "handler": "custom:ticket-send-email"
+                    },
+                    "initFunction": "initSendEmail"
+                }
+            ]
+        }
+    },
     "dynamicLogic": {
         "fields": {
             "bookedStart": {

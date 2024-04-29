@@ -16,6 +16,12 @@
                 {
                     "name": "contact"
                 }
+            ],
+            [
+                false,
+                {
+                    "name": "sendEmailTrigger"
+                }
             ]
         ],
         "style": "default",
@@ -65,6 +71,12 @@
                 },
                 {
                     "name": "ticketType"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "emailWasSend"
                 }
             ]
         ],
