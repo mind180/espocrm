@@ -5,13 +5,14 @@
         "label": "Ім'я"
     },
     {
-        "name": "place"
+        "name": "contact"
     },
     {
         "name": "status",
         "label": "Статус"
     },
     {
-        "name": "phone"
+        "name": "phone",
+        "label": "Телефон"
     }
 ]

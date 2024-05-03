@@ -18,7 +18,8 @@
         "paymentMethod": "Спосіб розрахунку",
         "place": "Місце",
         "sendEmailTrigger": "SendEmailTrigger",
-        "emailWasSend": "Надіслано на пошту"
+        "emailWasSend": "Надіслано на пошту",
+        "screenshot": "Скрин оплати"
     },
     "links": {
         "event": "Івент",

@@ -21,7 +21,8 @@
         "paymentMethod": "Спосіб розрахунку",
         "place": "Місце",
         "sendEmailTrigger": "SendEmailTrigger",
-        "emailWasSend": "Надіслано на пошту"
+        "emailWasSend": "Надіслано на пошту",
+        "screenshot": "Скрин оплати"
     },
     "tooltips": {
         "salesDate": "Дата сплати за квиток",

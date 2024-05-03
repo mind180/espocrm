@@ -101,6 +101,20 @@
         "rows": [
             [
                 {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Додатково"
+    },
+    {
+        "rows": [
+            [
+                {
                     "name": "bookingTime"
                 },
                 {
@@ -129,20 +143,6 @@
         "tabLabel": "Квитки та зал",
         "hidden": false,
         "customLabel": "Параметри квитків"
-    },
-    {
-        "rows": [
-            [
-                {
-                    "name": "description"
-                }
-            ]
-        ],
-        "dynamicLogicVisible": null,
-        "style": "default",
-        "tabBreak": false,
-        "hidden": false,
-        "customLabel": "Додатково"
     },
     {
         "rows": [

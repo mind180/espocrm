@@ -151,6 +151,15 @@
             "type": "bool",
             "tooltip": true,
             "isCustom": true
+        },
+        "screenshot": {
+            "type": "file",
+            "sourceList": [],
+            "accept": [
+                "image/*"
+            ],
+            "isCustom": true,
+            "audited": true
         }
     },
     "links": {
@@ -192,6 +201,12 @@
             "entity": "TicketType",
             "audited": false,
             "isCustom": true
+        },
+        "screenshot": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
         }
     },
     "collection": {
