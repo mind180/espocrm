@@ -26,11 +26,18 @@ define('custom:views/dashlets/tickets-income', ['views/dashlets/abstract/base'],
             try {
                 const ticketsCollection = await this.getCollectionFactory().create('Ticket');
                 if (eventId) {
-                    ticketsCollection.where = [{
-                        "type": "equals",
-                        "attribute": "eventId",
-                        "value": eventId,
-                    }];
+                    ticketsCollection.where = [
+                        {
+                            "type": "equals",
+                            "attribute": "eventId",
+                            "value": eventId,
+                        },
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "paid",
+                        }
+                    ];
                 }
                 
                 const tickets = await ticketsCollection.fetch();
