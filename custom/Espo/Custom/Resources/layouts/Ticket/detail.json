@@ -6,15 +6,13 @@
                     "name": "name"
                 },
                 {
-                    "name": "status"
+                    "name": "event"
                 }
             ],
             [
+                false,
                 {
-                    "name": "event"
-                },
-                {
-                    "name": "contact"
+                    "name": "status"
                 }
             ]
         ],
@@ -30,29 +28,25 @@
                 {
                     "name": "bookedEnd"
                 }
+            ],
+            [
+                false,
+                {
+                    "name": "screenshot"
+                }
             ]
         ],
-        "dynamicLogicVisible": {
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": {
             "conditionGroup": [
                 {
-                    "type": "or",
-                    "value": [
-                        {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "booked"
-                        },
-                        {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "notPaid"
-                        }
-                    ]
+                    "type": "equals",
+                    "attribute": "status",
+                    "value": "booked"
                 }
             ]
         },
-        "style": "warning",
-        "dynamicLogicStyled": null,
         "tabBreak": false,
         "hidden": false,
         "customLabel": "Бронювання"
@@ -64,11 +58,13 @@
                     "name": "place"
                 },
                 {
-                    "name": "ticketType"
+                    "name": "contact"
                 }
             ],
             [
-                false,
+                {
+                    "name": "ticketType"
+                },
                 {
                     "name": "emailWasSend"
                 }
@@ -99,12 +95,6 @@
                 {
                     "name": "isPaid"
                 }
-            ],
-            [
-                {
-                    "name": "screenshot"
-                },
-                false
             ]
         ],
         "dynamicLogicVisible": null,
@@ -143,24 +133,5 @@
         "tabBreak": false,
         "hidden": false,
         "customLabel": "Додатково"
-    },
-    {
-        "rows": [
-            [
-                {
-                    "name": "row"
-                },
-                {
-                    "name": "seat"
-                },
-                false,
-                false
-            ]
-        ],
-        "dynamicLogicVisible": null,
-        "style": "default",
-        "tabBreak": false,
-        "hidden": false,
-        "customLabel": "Індекс"
     }
 ]

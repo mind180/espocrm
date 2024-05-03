@@ -39,25 +39,7 @@
     "dynamicLogic": {
         "fields": {
             "bookedStart": {
-                "visible": {
-                    "conditionGroup": [
-                        {
-                            "type": "or",
-                            "value": [
-                                {
-                                    "type": "equals",
-                                    "attribute": "status",
-                                    "value": "booked"
-                                },
-                                {
-                                    "type": "equals",
-                                    "attribute": "status",
-                                    "value": "notPaid"
-                                }
-                            ]
-                        }
-                    ]
-                },
+                "visible": null,
                 "required": {
                     "conditionGroup": [
                         {
@@ -79,25 +61,7 @@
                 }
             },
             "bookedEnd": {
-                "visible": {
-                    "conditionGroup": [
-                        {
-                            "type": "or",
-                            "value": [
-                                {
-                                    "type": "equals",
-                                    "attribute": "status",
-                                    "value": "booked"
-                                },
-                                {
-                                    "type": "equals",
-                                    "attribute": "status",
-                                    "value": "notPaid"
-                                }
-                            ]
-                        }
-                    ]
-                },
+                "visible": null,
                 "required": {
                     "conditionGroup": [
                         {

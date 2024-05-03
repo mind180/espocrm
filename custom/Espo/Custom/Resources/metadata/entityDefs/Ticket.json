@@ -213,7 +213,10 @@
         "orderBy": "createdAt",
         "order": "desc",
         "textFilterFields": [
-            "name"
+            "name",
+            "phone",
+            "contact.lastName",
+            "contact.firstName"
         ],
         "fullTextSearch": false,
         "countDisabled": false
