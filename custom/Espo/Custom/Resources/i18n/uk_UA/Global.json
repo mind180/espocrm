@@ -22,7 +22,8 @@
         "CalculationExpenses": "Витрати",
         "Discount": "Знижка",
         "Rent": "Оренда",
-        "CalculationBudget": "Бюджет"
+        "CalculationBudget": "Бюджет",
+        "TicketsBunch": "Бронювання"
     },
     "scopeNamesPlural": {
         "WeekTemplate": "Назви шаблонів",
@@ -35,6 +36,7 @@
         "CalculationExpenses": "Витрати",
         "Discount": "Знижки",
         "Rent": "Оренда",
-        "CalculationBudget": "Бюджет"
+        "CalculationBudget": "Бюджет",
+        "TicketsBunch": "Бронювання"
     }
 }

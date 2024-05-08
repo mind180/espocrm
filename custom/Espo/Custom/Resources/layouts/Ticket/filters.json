@@ -1,5 +1,7 @@
 [
     "event",
+    "contact",
+    "ticketsBunch",
     "salesDate",
     "status",
     "name",

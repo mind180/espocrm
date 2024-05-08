@@ -22,19 +22,24 @@
         "place": "Місце",
         "sendEmailTrigger": "SendEmailTrigger",
         "emailWasSend": "Надіслано на пошту",
-        "screenshot": "Скрин оплати"
+        "screenshot": "Скрин оплати",
+        "uploadLinkWasSend": "uploadLinkWasSend",
+        "ticketsBunch": "Бронювання",
+        "bunchId": "BunchId"
     },
     "tooltips": {
         "salesDate": "Дата сплати за квиток",
         "bookedStart": "Дата та час початку бронювання",
         "bookedEnd": "Дата та час закінчення бронювання",
         "sendEmailTrigger": "Formula script use this field. When value change, script detect this as trigger to send email.",
-        "emailWasSend": "Квиток був надісланий на пошту"
+        "emailWasSend": "Квиток був надісланий на пошту",
+        "bunchId": "link to bunch id"
     },
     "links": {
         "event": "Івент",
         "contact": "Клієнт",
-        "ticketType": "Тип квитка"
+        "ticketType": "Тип квитка",
+        "ticketsBunch": "Бронювання"
     },
     "options": {
         "status": {

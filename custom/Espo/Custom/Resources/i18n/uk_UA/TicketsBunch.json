@@ -1,0 +1,53 @@
+{
+    "labels": {
+        "Create TicketsBunch": "Створити Бронювання"
+    },
+    "fields": {
+        "firstName": "Ім'я",
+        "lastName": "Прізвище",
+        "phone": "Телефон",
+        "email": "Email",
+        "indexes": "Індекси місць",
+        "event": "Івент",
+        "tickets": "Квитки",
+        "bunchId": "BunchId",
+        "screenshot": "Скрін оплати",
+        "bookedStart": "Початок бронювання",
+        "bookedEnd": "Кінець бронювання",
+        "contact": "Клієнт",
+        "price": "Ціна (всіх квитків)",
+        "priceCurrency": "Ціна (всіх квитків) (Валюта)",
+        "priceConverted": "Ціна (всіх квитків) (Конвертована)",
+        "salesDate": "Дата розрахунку",
+        "paymentMethod": "Спосіб розрахунку",
+        "status": "Статаус",
+        "isTicketsSend": "Квитки надіслано",
+        "sendEmailTrigger": "SendEmailTrigger",
+        "formatedPlaces": "FormatedPlaces"
+    },
+    "options": {
+        "indexes": [],
+        "paymentMethod": {
+            "cash": "Готівка",
+            "iban": "IBAN"
+        },
+        "status": {
+            "booked": "Заброньовано",
+            "paid": "Сплачено",
+            "notPaid": "Не сплачено"
+        }
+    },
+    "links": {
+        "event": "Івент",
+        "tickets": "Квитки",
+        "contact": "Клієнт"
+    },
+    "tooltips": {
+        "bunchId": "link with tickets",
+        "bookedStart": "Дата та час початку бронювання",
+        "bookedEnd": "Дата та час закінчення бронювання",
+        "price": "Ціна визначається як сума всіх квитків",
+        "isTicketsSend": "Чи були надіслані квитки на пошту",
+        "sendEmailTrigger": "Formula script use this field. When value change, script detect this as trigger to send email."
+    }
+}

@@ -11,7 +11,9 @@
         "oldParentPhone": "OldParentPhone",
         "oldRemoved": "OldRemoved",
         "oldCreatedAt": "OldCreatedAt",
-        "tickets": "Квитки"
+        "tickets": "Квитки",
+        "phoneHash": "PhoneHash",
+        "ticketsBunchs": "Бронювання"
     },
     "links": {
         "abonements": "Абонементи",
@@ -19,7 +21,8 @@
         "rents": "Аренда",
         "indivsMany": "Індиви",
         "rentPlans": "Планові оренди",
-        "tickets": "Квитки"
+        "tickets": "Квитки",
+        "ticketsBunchs": "Бронювання"
     },
     "labels": {
         "Create Contact": "Створити Клієнт"
@@ -35,5 +38,8 @@
     },
     "presetFilters": {
         "birthday": "День народження"
+    },
+    "tooltips": {
+        "phoneHash": "Used by ticked APi formula script"
     }
 }

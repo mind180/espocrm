@@ -224,6 +224,17 @@
             "maxLength": 150,
             "options": [],
             "isCustom": true
+        },
+        "ticketsBunchs": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -267,6 +278,13 @@
             "type": "hasMany",
             "foreign": "event",
             "entity": "Ticket",
+            "audited": false,
+            "isCustom": true
+        },
+        "ticketsBunchs": {
+            "type": "hasMany",
+            "foreign": "event",
+            "entity": "TicketsBunch",
             "audited": false,
             "isCustom": true
         }

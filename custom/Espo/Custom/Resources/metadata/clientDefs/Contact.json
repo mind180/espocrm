@@ -17,6 +17,9 @@
         },
         "tickets": {
             "layout": null
+        },
+        "ticketsBunchs": {
+            "layout": null
         }
     },
     "kanbanViewMode": false,

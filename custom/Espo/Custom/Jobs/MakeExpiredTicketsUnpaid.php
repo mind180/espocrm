@@ -13,7 +13,20 @@ class MakeExpiredTicketsUnpaid implements JobDataLess
 
     public function run(): void 
     {
-        $updateQuery = $this->entityManager
+        $updateBunches = $this->entityManager
+            ->getQueryBuilder()
+            ->update()
+            ->in('TicketsBunch')
+            ->set(['status' => 'notPaid'])
+            ->where([
+                'bookedEnd<=' => date('Y-m-d H:i:s'),
+                'status' => 'booked' 
+            ])
+            ->build();
+
+        $this->entityManager->getQueryExecutor()->execute($updateBunches);
+
+        $updateTickets = $this->entityManager
             ->getQueryBuilder()
             ->update()
             ->in('Ticket')
@@ -24,6 +37,6 @@ class MakeExpiredTicketsUnpaid implements JobDataLess
             ])
             ->build();
 
-        $this->entityManager->getQueryExecutor()->execute($updateQuery);
+        $this->entityManager->getQueryExecutor()->execute($updateTickets);
     }    
 }

@@ -35,43 +35,71 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "price": {
-            "type": "currency",
+        "firstName": {
+            "type": "varchar",
             "required": true,
-            "min": 0,
+            "maxLength": 100,
+            "options": [],
             "isCustom": true
         },
-        "salesDate": {
-            "notNull": false,
-            "type": "date",
-            "useNumericFormat": true,
-            "tooltip": true,
+        "lastName": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 50,
+            "options": [],
             "isCustom": true
         },
-        "isPaid": {
-            "notNull": true,
-            "type": "bool",
+        "phone": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 50,
+            "options": [],
             "isCustom": true
+        },
+        "email": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "indexes": {
+            "type": "array",
+            "storeArrayValues": true,
+            "noEmptyString": true,
+            "default": [],
+            "isCustom": true,
+            "displayAsList": true
         },
         "event": {
             "type": "link"
         },
-        "status": {
-            "type": "enum",
-            "required": true,
-            "options": [
-                "booked",
-                "paid",
-                "notPaid"
-            ],
-            "style": {
-                "booked": "warning",
-                "paid": "success",
-                "notPaid": null
-            },
-            "default": "booked",
-            "audited": false,
+        "tickets": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
             "isCustom": true
+        },
+        "bunchId": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "tooltip": true,
+            "isCustom": true
+        },
+        "screenshot": {
+            "type": "file",
+            "maxFileSize": 2,
+            "accept": [
+                "image/*"
+            ],
+            "sourceList": [],
+            "isCustom": true,
+            "audited": true
         },
         "bookedStart": {
             "notNull": false,
@@ -90,36 +118,18 @@
             "isCustom": true
         },
         "contact": {
-            "type": "link",
-            "required": false,
-            "createButton": true
-        },
-        "ticketType": {
             "type": "link"
         },
-        "seat": {
-            "type": "int",
-            "required": true,
-            "min": 1,
+        "price": {
+            "type": "currency",
+            "tooltip": true,
             "isCustom": true
         },
-        "row": {
-            "type": "int",
-            "required": true,
-            "min": 1,
-            "isCustom": true
-        },
-        "phone": {
-            "type": "varchar",
-            "maxLength": 15,
-            "options": [],
-            "isCustom": true
-        },
-        "email": {
-            "type": "varchar",
-            "maxLength": 50,
-            "options": [],
-            "isCustom": true
+        "salesDate": {
+            "notNull": false,
+            "type": "date",
+            "isCustom": true,
+            "useNumericFormat": true
         },
         "paymentMethod": {
             "type": "enum",
@@ -134,10 +144,25 @@
             "default": "cash",
             "isCustom": true
         },
-        "place": {
-            "type": "varchar",
-            "maxLength": 150,
-            "options": [],
+        "status": {
+            "type": "enum",
+            "options": [
+                "booked",
+                "paid",
+                "notPaid"
+            ],
+            "default": "booked",
+            "style": {
+                "booked": "warning",
+                "paid": "success",
+                "notPaid": null
+            },
+            "isCustom": true
+        },
+        "isTicketsSend": {
+            "notNull": true,
+            "type": "bool",
+            "tooltip": true,
             "isCustom": true
         },
         "sendEmailTrigger": {
@@ -146,34 +171,10 @@
             "tooltip": true,
             "isCustom": true
         },
-        "emailWasSend": {
-            "notNull": true,
-            "type": "bool",
-            "tooltip": true,
-            "isCustom": true
-        },
-        "screenshot": {
-            "type": "file",
-            "sourceList": [],
-            "accept": [
-                "image/*"
-            ],
-            "isCustom": true,
-            "audited": true
-        },
-        "uploadLinkWasSend": {
-            "notNull": true,
-            "type": "bool",
-            "isCustom": true
-        },
-        "ticketsBunch": {
-            "type": "link"
-        },
-        "bunchId": {
-            "type": "varchar",
-            "maxLength": 50,
-            "options": [],
-            "tooltip": true,
+        "formatedPlaces": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
             "isCustom": true
         }
     },
@@ -198,22 +199,15 @@
         },
         "event": {
             "type": "belongsTo",
-            "foreign": "tickets",
+            "foreign": "ticketsBunchs",
             "entity": "Event",
             "audited": false,
             "isCustom": true
         },
-        "contact": {
-            "type": "belongsTo",
-            "foreign": "tickets",
-            "entity": "Contact",
-            "audited": false,
-            "isCustom": true
-        },
-        "ticketType": {
-            "type": "belongsTo",
-            "foreign": "tickets",
-            "entity": "TicketType",
+        "tickets": {
+            "type": "hasMany",
+            "foreign": "ticketsBunch",
+            "entity": "Ticket",
             "audited": false,
             "isCustom": true
         },
@@ -223,10 +217,10 @@
             "skipOrmDefs": true,
             "utility": true
         },
-        "ticketsBunch": {
+        "contact": {
             "type": "belongsTo",
-            "foreign": "tickets",
-            "entity": "TicketsBunch",
+            "foreign": "ticketsBunchs",
+            "entity": "Contact",
             "audited": false,
             "isCustom": true
         }
@@ -235,10 +229,7 @@
         "orderBy": "createdAt",
         "order": "desc",
         "textFilterFields": [
-            "name",
-            "phone",
-            "contact.lastName",
-            "contact.firstName"
+            "name"
         ],
         "fullTextSearch": false,
         "countDisabled": false

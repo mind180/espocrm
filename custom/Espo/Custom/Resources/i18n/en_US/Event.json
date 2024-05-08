@@ -23,13 +23,15 @@
         "showOnSite": "Показати на сайті",
         "indexer": "Індексатор",
         "phone": "Телефон",
-        "iban": "Розрахунковий рахунок"
+        "iban": "Розрахунковий рахунок",
+        "ticketsBunchs": "Бронювання"
     },
     "links": {
         "parent": "Parent",
         "eventType": "Тип івенту",
         "ticketTypes": "Типи квитків",
-        "tickets": "Квитки"
+        "tickets": "Квитки",
+        "ticketsBunchs": "Бронювання"
     },
     "options": {
         "status": {

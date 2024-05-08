@@ -1,0 +1,39 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-clock",
+    "relationshipPanels": {
+        "event": {
+            "layout": null
+        },
+        "tickets": {
+            "layout": null
+        },
+        "contact": {
+            "layout": null
+        }
+    },
+    "kanbanViewMode": true,
+    "color": null,
+    "menu": {
+        "detail": {
+            "buttons": [
+                "__APPEND__",
+                {
+                    "label": "Надіслати на пошту",
+                    "name": "sendEmail",
+                    "action": "sendEmail",
+                    "style": "default",
+                    "acl": "edit",
+                    "aclScope": "TicketsBunch",
+                    "data": {
+                        "handler": "custom:ticket-send-email"
+                    },
+                    "initFunction": "initSendEmail"
+                }
+            ]
+        }
+    }
+}

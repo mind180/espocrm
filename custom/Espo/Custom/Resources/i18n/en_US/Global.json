@@ -32,7 +32,8 @@
         "CalculationBudget": "Бюджет",
         "EventType": "Тип івенту",
         "TicketType": "Тип квитка",
-        "Ticket": "Квиток"
+        "Ticket": "Квиток",
+        "TicketsBunch": "Бронювання"
     },
     "scopeNamesPlural": {
         "Training": "Заняття",
@@ -67,7 +68,8 @@
         "CalculationBudget": "Бюджет",
         "EventType": "Типи івентів",
         "TicketType": "Типи квитків",
-        "Ticket": "Квитки"
+        "Ticket": "Квитки",
+        "TicketsBunch": "Бронювання"
     },
     "labels": {
         "Schedule Training": "Schedule Заняття",

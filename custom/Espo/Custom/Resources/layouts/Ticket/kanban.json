@@ -18,5 +18,12 @@
         "name": "contact",
         "link": true,
         "align": "right"
+    },
+    {
+        "name": "screenshot"
+    },
+    {
+        "name": "description",
+        "align": "left"
     }
 ]

@@ -10,7 +10,9 @@
                 }
             ],
             [
-                false,
+                {
+                    "name": "ticketsBunch"
+                },
                 {
                     "name": "status"
                 }
@@ -30,10 +32,10 @@
                 }
             ],
             [
-                false,
                 {
                     "name": "screenshot"
-                }
+                },
+                false
             ]
         ],
         "dynamicLogicVisible": null,

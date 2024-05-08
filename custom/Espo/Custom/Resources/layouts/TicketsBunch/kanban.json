@@ -1,0 +1,24 @@
+[
+    {
+        "name": "bookedStart"
+    },
+    {
+        "name": "bookedEnd"
+    },
+    {
+        "name": "tickets"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "align": "right"
+    },
+    {
+        "name": "screenshot",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "description"
+    }
+]

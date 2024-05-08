@@ -15,6 +15,9 @@
         },
         "ticketType": {
             "layout": null
+        },
+        "ticketsBunch": {
+            "layout": null
         }
     },
     "menu": {

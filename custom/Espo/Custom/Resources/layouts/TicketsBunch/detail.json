@@ -1,0 +1,79 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "event"
+                }
+            ],
+            [
+                {
+                    "name": "contact"
+                },
+                {
+                    "name": "status"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bookedStart"
+                },
+                {
+                    "name": "bookedEnd"
+                }
+            ],
+            [
+                {
+                    "name": "screenshot"
+                },
+                {
+                    "name": "tickets"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "isTicketsSend"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Бронювання"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "salesDate"
+                },
+                {
+                    "name": "price"
+                }
+            ],
+            [
+                {
+                    "name": "paymentMethod"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Розрахунок"
+    }
+]

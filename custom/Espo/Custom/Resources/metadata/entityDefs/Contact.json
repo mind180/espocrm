@@ -118,6 +118,24 @@
             "exportDisabled": true,
             "customizationDisabled": true,
             "isCustom": true
+        },
+        "phoneHash": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "tooltip": true,
+            "isCustom": true
+        },
+        "ticketsBunchs": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutListDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -161,6 +179,13 @@
             "type": "hasMany",
             "foreign": "contact",
             "entity": "Ticket",
+            "audited": false,
+            "isCustom": true
+        },
+        "ticketsBunchs": {
+            "type": "hasMany",
+            "foreign": "contact",
+            "entity": "TicketsBunch",
             "audited": false,
             "isCustom": true
         }

@@ -8,6 +8,7 @@ define('custom:ticket-send-email', ['action-handler'], function (Dep) {
 
             this.view.model.set("sendEmailTrigger", inverseTrigger);
             this.view.model.set("emailWasSend", true);
+            this.view.model.set("isTicketsSend", true);
             this.view.model.save()
                 .then(res => {
                     Espo.Ui.notify('Квиток відправлено', 'success', 2000);
