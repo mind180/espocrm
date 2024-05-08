@@ -52,20 +52,30 @@ return [
         0 => 'Calendar',
         1 => 'Training',
         2 => 'Indiv',
-        3 => 'Rent',
-        4 => 'Event'
+        3 => 'Rent'
       ]
     ],
     1 => 'AttendanceSheet',
     2 => 'Contact',
     3 => 'Abonement',
-    4 => 'Goods',
-    5 => 'Ticket',
-    6 => 'RentPlan',
-    7 => (object) [
+    4 => 'RentPlan',
+    5 => 'Goods',
+    6 => (object) [
       'type' => 'divider',
       'text' => 'Менеджмент',
-      'id' => '117676'
+      'id' => '293667'
+    ],
+    7 => (object) [
+      'type' => 'group',
+      'text' => 'Івенти',
+      'iconClass' => 'fas fa-star',
+      'color' => NULL,
+      'id' => '251947',
+      'itemList' => [
+        0 => 'TicketsBunch',
+        1 => 'Ticket',
+        2 => 'Event'
+      ]
     ],
     8 => (object) [
       'type' => 'group',
@@ -168,9 +178,10 @@ return [
       'color' => NULL,
       'id' => '288933',
       'itemList' => [
-        0 => 'Lead',
-        1 => 'Opportunity',
-        2 => 'Meeting'
+        0 => 'Document',
+        1 => 'Lead',
+        2 => 'Opportunity',
+        3 => 'Meeting'
       ]
     ],
     18 => 'Stream'
@@ -358,8 +369,8 @@ return [
     1 => 'email',
     2 => 'phone'
   ],
-  'cacheTimestamp' => 1709835192,
-  'microtime' => 1709835192.533476,
+  'cacheTimestamp' => 1715113258,
+  'microtime' => 1715113258.247154,
   'siteUrl' => 'https://dsfreedom.art',
   'fullTextSearchMinLength' => 4,
   'appTimestamp' => 1695834342,
