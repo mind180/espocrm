@@ -5,7 +5,11 @@
         "label": "Ім'я"
     },
     {
-        "name": "contact"
+        "name": "ticketsBunch"
+    },
+    {
+        "name": "contact",
+        "label": "Клієнт"
     },
     {
         "name": "status",

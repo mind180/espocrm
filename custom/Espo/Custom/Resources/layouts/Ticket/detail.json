@@ -135,5 +135,24 @@
         "tabBreak": false,
         "hidden": false,
         "customLabel": "Додатково"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "row"
+                },
+                {
+                    "name": "seat"
+                },
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Індекс"
     }
 ]

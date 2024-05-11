@@ -5,6 +5,9 @@
         "label": "Ім'я (name)"
     },
     {
+        "name": "status"
+    },
+    {
         "name": "tickets",
         "notSortable": true,
         "label": "Квитки"

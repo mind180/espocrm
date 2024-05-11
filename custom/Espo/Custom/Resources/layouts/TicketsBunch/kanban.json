@@ -14,6 +14,9 @@
         "align": "right"
     },
     {
+        "name": "phone"
+    },
+    {
         "name": "screenshot",
         "link": true,
         "align": "left"

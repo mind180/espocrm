@@ -17,7 +17,7 @@
         "priceConverted": "Ціна (всіх квитків) (Конвертована)",
         "salesDate": "Дата розрахунку",
         "paymentMethod": "Спосіб розрахунку",
-        "status": "Статаус",
+        "status": "Статус",
         "isTicketsSend": "Квитки надіслано",
         "sendEmailTrigger": "SendEmailTrigger",
         "formatedPlaces": "FormatedPlaces"

@@ -16,6 +16,14 @@
                 {
                     "name": "status"
                 }
+            ],
+            [
+                {
+                    "name": "phone"
+                },
+                {
+                    "name": "email"
+                }
             ]
         ],
         "style": "default",
@@ -75,5 +83,38 @@
         "tabBreak": false,
         "hidden": false,
         "customLabel": "Розрахунок"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Додатково"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "formatedPlaces"
+                }
+            ],
+            [
+                {
+                    "name": "indexes"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "System"
     }
 ]

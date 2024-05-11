@@ -229,7 +229,11 @@
         "orderBy": "createdAt",
         "order": "desc",
         "textFilterFields": [
-            "name"
+            "name",
+            "firstName",
+            "lastName",
+            "phone",
+            "email"
         ],
         "fullTextSearch": false,
         "countDisabled": false
