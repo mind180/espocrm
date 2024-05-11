@@ -6,67 +6,34 @@ define('custom:views/dashlets/tickets-income', ['views/dashlets/abstract/base'],
         setup: function() {
             this.income = 0;
             this.incomeCash = 0;
-            this.incomeIBAN = 0;
-            this.events = { total: 0, list: [] };
+            this.incomeIban = 0;
             this.eventId = this.getOption('eventId');
 
             this.wait(
-                this.fetchTickets(this.eventId)
+                this.fetchEventIncome(this.eventId)
             );
         },
 
-        fetchEvents: async function() {
-            const eventsCollection = await this.getCollectionFactory().create('Event');
-            this.events = await eventsCollection.fetch();
-
-            console.log(this.events);
-        },
-
-        fetchTickets: async function(eventId) {
+        fetchEventIncome: async function(eventId) {
             try {
-                const ticketsCollection = await this.getCollectionFactory().create('Ticket');
-                if (eventId) {
-                    ticketsCollection.where = [
-                        {
-                            "type": "equals",
-                            "attribute": "eventId",
-                            "value": eventId,
-                        },
-                        {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "paid",
-                        }
-                    ];
-                }
-                
-                const tickets = await ticketsCollection.fetch();
-                this.income = this.sumTickets(tickets.list);
-                this.incomeCash = this.sumTickets(
-                    tickets.list.filter(ticket => ticket.paymentMethod === 'cash')
-                );
-                this.incomeIBAN = this.sumTickets(
-                    tickets.list.filter(ticket => ticket.paymentMethod === 'iban')
-                );
+                const eventIncomeRes = await fetch(`api/v1/Event/${eventId}/income`);
+                const eventIncome  = await eventIncomeRes.json();
+                console.log(eventIncome);
+                this.income = eventIncome.income;
+                this.incomeCash = eventIncome.incomeCash;
+                this.incomeIban = eventIncome.incomeIban;
 
-                console.log(tickets);
+                return eventIncome;
             } catch (error) {
                 console.error(error);
             }
         },
 
-        sumTickets: function(tickets) {
-            let sum = 0;
-            tickets.forEach(ticket => sum += ticket.price);
-            return sum; 
-        },
-
         data: function() {
             return {
-                events: this.events.list,
                 income: this.income.toLocaleString('en'),
-                profit: this.incomeCash.toLocaleString('en'),
-                expenses: this.incomeIBAN.toLocaleString('en')
+                incomeCash: this.incomeCash.toLocaleString('en'),
+                incomeIban: this.incomeIban.toLocaleString('en')
             }
         }
     })

@@ -7,8 +7,14 @@
             <span class="text-3em text-success text-bold">{{ income }}</span>
         </div>
         <div class="income-result-details">
-            <div style="color: var(--state-info-text); margin-bottom: -5px;">{{ profit }}</div>
-            <div style="color: var(--state-info-text);">{{ expenses }}</div>
+            <div style="color: var(--state-info-text); margin-bottom: -5px;">
+                {{ incomeCash }}
+                <span style="font-size: 0.7em">(готівка)<span>
+            </div>
+            <div style="color: var(--state-info-text);">
+                {{ incomeIban }}
+                <span style="font-size: 0.7em">(iban)<span>
+            </div>
         </div>
     </div>
     <div></div>

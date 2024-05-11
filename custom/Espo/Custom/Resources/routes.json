@@ -38,5 +38,14 @@
             "teamsIds": ":teams",
             "trainerId": ":trainerId"
         }
+    },
+    {
+        "route": "/Event/:eventId/income",
+        "method": "get",
+        "params": {
+            "controller": "EventStatisticsController",
+            "action": "income",
+            "eventId": ":eventId"
+        }
     }
 ]
